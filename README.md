@@ -25,6 +25,7 @@ Leia o enunciado completo no Canvas.
 
 
 ## Print da página de detalhes do item
+
 ![Uploading veighparatrabalho.png…]()
 
 
