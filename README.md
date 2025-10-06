@@ -25,8 +25,8 @@ Leia o enunciado completo no Canvas.
 
 
 ## Print da página de detalhes do item
+![Uploading veighparatrabalho.png…]()
 
-<<  COLOQUE A IMAGEM AQUI >>
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 // Dados dos álbuns de Veigh
