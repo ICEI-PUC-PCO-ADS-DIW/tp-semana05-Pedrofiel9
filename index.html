@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veigh - Site Oficial</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>Veigh</h1>
+        </div>
+        <nav class="navegacao-principal">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Álbuns</a></li>
+                <li><a href="#">Membros</a></li>
+                <li><a href="#">Turnê</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?auto=format&fit=crop&w=1770&q=80" alt="Veigh em show">
+            <div class="destaque-conteudo">
+                <h2>A SUPERNOVA ESTÁ DE VOLTA</h2>
+                <p class="destaque-texto">O retorno da lenda do rap brasileiro</p>
+                <a href="#" class="btn">Descobrir mais</a>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <h2 class="titulo-secao">Sobre o artista</h2>
+            <p>VEIGH É UM RAPPER BRASILEIRO EM ASCENSÃO QUE, APÓS MUITO SUCESSO, FICOU UM TEMPO AFASTADO DOS PALCOS. AGORA O RAPPER E DONO DA BANDA SUPERNOVA ESTÁ DE VOLTA.</p>
+        </section>
+
+        <section class="albuns-destaque">
+            <h2 class="titulo-secao">Álbuns Icônicos</h2>
+            <div id="container-albuns" class="container-albuns">
+                <!-- Os cards dos álbuns serão inseridos dinamicamente pelo app.js -->
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h3>Fique conectado!</h3>
+            <p>Não perca as últimas notícias e datas de shows. Inscreva-se em nossa newsletter.</p>
+            <form class="form-newsletter" action="#" method="post">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteudo-rodape">
+            <div class="redes-sociais">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Veigh. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

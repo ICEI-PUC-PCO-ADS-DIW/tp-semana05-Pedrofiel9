@@ -16,20 +16,25 @@ Leia o enunciado completo no Canvas.
 
 - Nome: Pedro Enzo Campos Fiel
 - Matricula: 903847
-- Proposta de projeto escolhida: Carreira do cantor veigh
-- Breve descrição sobre seu projeto: Nesse projeto irei falar sobre a carrreira, músicas, albuns e projetos do presente e do futuro.
+# Projeto: Carreira do rapper Veigh  
 
-## Print da Home-Page
+- **Proposta de projeto escolhida:** Carreira do rapper Veigh  
+- **Breve descrição sobre seu projeto:** Nesse projeto irei falar sobre a carreira, jornada, músicas, álbuns e projetos do presente e do futuro do artista Veigh.
 
+---
+
+## 📸 Print da Home-Page
 <img width="1419" height="738" alt="homepage05" src="https://github.com/user-attachments/assets/7da26e16-eb31-4f0b-a469-41e3174e1426" />
 
+---
 
-## Print da página de detalhes do item
+## 📸 Print da página de detalhes do item
+![veighparatrabalho](veighparatrabalho.png)
 
-![Uploading veighparatrabalho.png…]()
+---
 
-
-## Cole aqui abaixo a estrutura JSON utilizada no app.js
+## 💾 Estrutura JSON utilizada no `app.js`
+```js
 // Dados dos álbuns de Veigh
 const albuns = [
   {
@@ -61,43 +66,3 @@ const albuns = [
   }
 ];
 
-// Página inicial: gerar os cards de álbuns
-const containerAlbuns = document.getElementById("container-albuns");
-
-if (containerAlbuns) {
-  albuns.forEach(album => {
-    const card = document.createElement("article");
-    card.classList.add("cartao-album");
-    card.innerHTML = `
-      <img src="${album.imagem}" alt="Capa do álbum ${album.titulo}">
-      <div class="info-album">
-        <h3>${album.titulo}</h3>
-        <p>${album.ano}</p>
-        <a href="detalhes.html?id=${album.id}" class="btn">Ver detalhes</a>
-      </div>
-    `;
-    containerAlbuns.appendChild(card);
-  });
-}
-
-// Página de detalhes: exibir informações completas
-const detalhesContainer = document.getElementById("detalhes-album");
-if (detalhesContainer) {
-  const params = new URLSearchParams(window.location.search);
-  const id = parseInt(params.get("id"));
-  const album = albuns.find(a => a.id === id);
-
-  if (album) {
-    detalhesContainer.innerHTML = `
-      <img src="${album.imagem}" alt="${album.titulo}" class="img-detalhe">
-      <h2>${album.titulo}</h2>
-      <p><strong>Ano:</strong> ${album.ano}</p>
-      <p><strong>Autor:</strong> ${album.autor}</p>
-      <p>${album.descricao}</p>
-      <h4>Faixas:</h4>
-      <ul>${album.faixas.map(faixa => `<li>${faixa}</li>`).join('')}</ul>
-      <a href="index.html" class="btn">← Voltar</a>
-    `;
-  } else {
-    detalhesContainer.innerHTML = `<p>Álbum não encontrado.</p>`;
-  }
